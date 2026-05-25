@@ -42,11 +42,9 @@ const pillars = [
 export default function Kodawari() {
   return (
     <section id="kodawari" className="py-24 md:py-32 bg-engyu-black relative overflow-hidden">
-      {/* Background texture overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(176,26,26,0.08),transparent_50%),radial-gradient(circle_at_80%_20%,rgba(201,168,76,0.05),transparent_50%)]" />
 
       <div className="max-w-6xl mx-auto px-6 relative z-10">
-        {/* Section header */}
         <div className="text-center mb-20">
           <p className="text-engyu-gold text-xs tracking-[0.5em] mb-4">PHILOSOPHY</p>
           <h2 className="text-3xl md:text-4xl font-bold text-engyu-cream tracking-wider mb-4">
@@ -59,7 +57,6 @@ export default function Kodawari() {
           </div>
         </div>
 
-        {/* Pillars */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
           {pillars.map((pillar, i) => (
             <div
@@ -67,24 +64,19 @@ export default function Kodawari() {
               className="group relative"
               style={{ animationDelay: `${i * 100}ms` }}
             >
-              {/* Card */}
               <div className="relative border border-white/5 bg-engyu-card/50 p-8 hover:border-engyu-gold/30 transition-all duration-500">
-                {/* Large number background */}
                 <span className="absolute top-4 right-6 text-7xl font-bold text-engyu-gold/5 leading-none select-none">
                   {pillar.number}
                 </span>
 
-                {/* Icon */}
                 <div className="text-engyu-gold mb-6 group-hover:scale-110 transition-transform duration-500 origin-left">
                   {pillar.icon}
                 </div>
 
-                {/* Number small */}
                 <span className="text-engyu-gold/60 text-xs tracking-widest mb-2 block">
                   {pillar.number}
                 </span>
 
-                {/* Title */}
                 <h3 className="text-xl font-bold text-engyu-cream tracking-wider mb-1">
                   {pillar.title}
                 </h3>
@@ -92,19 +84,26 @@ export default function Kodawari() {
                   {pillar.subtitle}
                 </p>
 
-                {/* Divider */}
                 <div className="h-[1px] w-10 bg-engyu-gold/40 mb-5 group-hover:w-20 transition-all duration-500" />
 
-                {/* Body */}
                 <p className="text-engyu-muted text-sm leading-loose">
                   {pillar.body}
                 </p>
+
+                {pillar.number === "02" && (
+                  <div className="mt-6 overflow-hidden">
+                    <img
+                      src="/備長炭焼肉画像.jpg"
+                      alt="備長炭で焼く焼肉"
+                      className="w-full h-48 object-cover opacity-80 hover:opacity-100 transition-opacity duration-500"
+                    />
+                  </div>
+                )}
               </div>
             </div>
           ))}
         </div>
 
-        {/* Bottom quote */}
         <div className="text-center mt-20">
           <p className="text-engyu-cream/50 text-base md:text-lg tracking-[0.25em] leading-loose">
             「最高の素材を、最高の炎で。」
