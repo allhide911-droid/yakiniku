@@ -1,9 +1,12 @@
+import Image from "next/image";
+
 const pillars = [
   {
     number: "01",
     title: "産地直送の黒毛和牛",
     subtitle: "素材への誇り",
     body: "全国から厳選した黒毛和牛を産地直送で仕入れ。A4・A5ランクのみを扱い、その日の状態を見極めた上で最適な部位をご提供します。鮮度と品質に一切の妥協はありません。",
+    image: "/images/産地直送の黒毛和牛.png",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
         <path d="M20 4C11.16 4 4 11.16 4 20s7.16 16 16 16 16-7.16 16-16S28.84 4 20 4z" stroke="currentColor" strokeWidth="1.5" />
@@ -17,6 +20,7 @@ const pillars = [
     title: "備長炭の火入れ",
     subtitle: "炎のこだわり",
     body: "紀州産の備長炭を使い、遠赤外線で肉の芯まで均一に火を通します。余分な脂を落としながら旨味を閉じ込める、この炎こそが「炎牛」の原点。炭の香りが肉の美味しさをさらに引き立てます。",
+    image: "/images/備長炭焼肉画像.jpg",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
         <path d="M20 6c-2 4-6 6-6 12 0 5.52 2.69 10 6 10s6-4.48 6-10c0-6-4-8-6-12z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -29,6 +33,7 @@ const pillars = [
     title: "秘伝のたれ",
     subtitle: "受け継がれる味",
     body: "三代にわたって守り続けてきた秘伝のタレ。醤油・味醂・果汁をベースに、長年継ぎ足しながら育てた独自の配合は企業秘密。どんな部位にも合う万能タレと、塩・レモンの2種類でお楽しみいただけます。",
+    image: "/images/秘伝のたれ.png",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
         <path d="M12 32V16l8-8 8 8v16H12z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -90,15 +95,16 @@ export default function Kodawari() {
                   {pillar.body}
                 </p>
 
-                {pillar.number === "02" && (
-                  <div className="mt-6 overflow-hidden">
-                    <img
-                      src="/備長炭焼肉画像.jpg"
-                      alt="備長炭で焼く焼肉"
-                      className="w-full h-48 object-cover opacity-80 hover:opacity-100 transition-opacity duration-500"
-                    />
-                  </div>
-                )}
+                <div className="mt-6 relative h-48 overflow-hidden">
+                  <Image
+                    src={pillar.image}
+                    alt={pillar.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    loading="lazy"
+                    className="object-cover opacity-80 hover:opacity-100 transition-opacity duration-500"
+                  />
+                </div>
               </div>
             </div>
           ))}

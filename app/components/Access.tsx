@@ -78,7 +78,7 @@ export default function Access() {
                   <dd className="text-engyu-cream text-sm leading-relaxed">
                     〒544-0034
                     <br />
-                    大阪府大阪市生野区鶴橋2丁目5−8
+                    大阪府大阪市生野区鶴橋2丁目
                   </dd>
                 </div>
                 <div className="flex gap-4">
