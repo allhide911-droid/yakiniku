@@ -104,7 +104,7 @@ export default function Interior() {
               <div className="h-[1px] w-12 bg-engyu-gold/40" />
             </div>
 
-            <p className="text-engyu-muted text-sm leading-loose mb-10">
+            <p className="text-engyu-muted text-sm leading-loose mb-10 font-sans-jp">
               こだわりの内装と落ち着いた照明が、特別なひとときを演出します。
               大切な方との食事を、居心地のよい空間でお楽しみください。
             </p>
@@ -116,7 +116,7 @@ export default function Interior() {
                   <span className="text-engyu-gold shrink-0 group-hover:scale-110 transition-transform duration-300">
                     {f.icon}
                   </span>
-                  <span className="text-engyu-cream text-sm tracking-wider">{f.text}</span>
+                  <span className="text-engyu-cream text-sm tracking-wider font-sans-jp">{f.text}</span>
                   <div className="flex-1 h-[1px] bg-engyu-gold/15" />
                 </li>
               ))}

@@ -43,14 +43,14 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm tracking-widest text-engyu-cream/80 hover:text-engyu-gold transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-engyu-gold after:transition-all hover:after:w-full"
+              className="text-sm tracking-widest text-engyu-cream/80 hover:text-engyu-gold transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[1px] after:bg-engyu-gold after:transition-all hover:after:w-full font-sans-jp"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#access"
-            className="ml-4 border border-engyu-gold text-engyu-gold text-sm tracking-widest px-5 py-2 hover:bg-engyu-gold hover:text-engyu-black transition-all duration-300"
+            className="ml-4 border border-engyu-gold text-engyu-gold text-sm tracking-widest px-5 py-2 hover:bg-engyu-gold hover:text-engyu-black transition-all duration-300 font-sans-jp"
           >
             ご予約
           </a>
@@ -84,7 +84,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="px-6 py-3 text-sm tracking-widest text-engyu-cream/80 hover:text-engyu-gold hover:bg-white/5 transition-colors"
+              className="px-6 py-3 text-sm tracking-widest text-engyu-cream/80 hover:text-engyu-gold hover:bg-white/5 transition-colors font-sans-jp"
             >
               {link.label}
             </a>
@@ -92,7 +92,7 @@ export default function Header() {
           <a
             href="#access"
             onClick={() => setMenuOpen(false)}
-            className="mx-6 mt-3 border border-engyu-gold text-engyu-gold text-sm tracking-widest px-5 py-2 text-center hover:bg-engyu-gold hover:text-engyu-black transition-all"
+            className="mx-6 mt-3 border border-engyu-gold text-engyu-gold text-sm tracking-widest px-5 py-2 text-center hover:bg-engyu-gold hover:text-engyu-black transition-all font-sans-jp"
           >
             ご予約
           </a>

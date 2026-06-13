@@ -60,7 +60,7 @@ export default function Menu() {
             <div className="w-1 h-1 bg-engyu-gold/60 rotate-45" />
             <div className="h-[1px] w-12 bg-engyu-gold/40" />
           </div>
-          <p className="mt-6 text-engyu-muted text-sm tracking-widest leading-relaxed max-w-md mx-auto">
+          <p className="mt-6 text-engyu-muted text-sm tracking-widest leading-relaxed max-w-md mx-auto font-sans-jp">
             産地直送の黒毛和牛を、その日の状態に合わせた切り方で提供。
             <br />
             すべては「最高の一口」のために。
@@ -94,7 +94,7 @@ export default function Menu() {
                 {/* Label badge */}
                 {item.label && (
                   <span
-                    className={`absolute top-3 left-3 inline-block text-xs tracking-widest px-2 py-0.5 z-10 ${labelColors[item.label] ?? "bg-engyu-gold/20 text-engyu-gold"}`}
+                    className={`absolute top-3 left-3 inline-block text-xs tracking-widest px-2 py-0.5 z-10 font-sans-jp ${labelColors[item.label] ?? "bg-engyu-gold/20 text-engyu-gold"}`}
                   >
                     {item.label}
                   </span>
@@ -105,7 +105,7 @@ export default function Menu() {
               <div className="relative p-5">
                 {/* Item name */}
                 <div className="mb-3">
-                  <span className="block text-engyu-muted text-xs tracking-widest mb-1">
+                  <span className="block text-gray-300 text-xs tracking-widest mb-1 font-sans-jp">
                     {item.ruby}
                   </span>
                   <h3 className="text-lg font-bold text-engyu-cream tracking-wider">
@@ -117,23 +117,23 @@ export default function Menu() {
                 <div className="h-[1px] w-8 bg-engyu-gold/40 mb-3 group-hover:w-16 transition-all duration-500" />
 
                 {/* Description */}
-                <p className="text-engyu-muted text-sm leading-loose mb-4">
+                <p className="text-engyu-muted text-sm leading-loose mb-4 font-sans-jp">
                   {item.desc}
                 </p>
 
                 {/* Price */}
                 <div className="flex items-baseline gap-1">
-                  <span className="text-engyu-gold text-xl font-bold">
+                  <span className="text-engyu-gold text-xl font-bold font-sans-jp">
                     ¥{item.price}
                   </span>
-                  <span className="text-engyu-muted text-xs">（税込）</span>
+                  <span className="text-engyu-muted text-xs font-sans-jp">（税込）</span>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <p className="text-center text-engyu-muted text-xs tracking-wider mt-10">
+        <p className="text-center text-engyu-muted text-xs tracking-wider mt-10 font-sans-jp">
           ※ 価格はすべて税込表示です。仕入れ状況により一部メニューは変更になる場合があります。
         </p>
       </div>

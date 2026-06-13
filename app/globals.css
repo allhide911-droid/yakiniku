@@ -9,8 +9,9 @@
   --color-engyu-gold: #c9a84c;
   --color-engyu-gold-light: #dfc070;
   --color-engyu-cream: #f0ebe0;
-  --color-engyu-muted: #887f70;
+  --color-engyu-muted: #a89e92;
   --font-serif-jp: var(--font-noto-serif-jp);
+  --font-sans-jp: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 html {

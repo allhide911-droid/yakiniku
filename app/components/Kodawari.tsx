@@ -9,9 +9,9 @@ const pillars = [
     image: "/images/産地直送の黒毛和牛.png",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
-        <path d="M20 4C11.16 4 4 11.16 4 20s7.16 16 16 16 16-7.16 16-16S28.84 4 20 4z" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M14 20c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6z" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M20 14V8M20 32v-6M14 20H8M32 20h-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M20 4C11.16 4 4 11.16 4 20s7.16 16 16 16 16-7.16 16-16S28.84 4 20 4z" stroke="currentColor" strokeWidth="2" />
+        <path d="M14 20c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6z" stroke="currentColor" strokeWidth="2" />
+        <path d="M20 14V8M20 32v-6M14 20H8M32 20h-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -23,8 +23,8 @@ const pillars = [
     image: "/images/備長炭焼肉画像.jpg",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
-        <path d="M20 6c-2 4-6 6-6 12 0 5.52 2.69 10 6 10s6-4.48 6-10c0-6-4-8-6-12z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <path d="M16 24c0-2 1-3.5 2-5 1 1.5 2 3 2 5 0 2.21-.9 4-2 4s-2-1.79-2-4z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+        <path d="M20 6c-2 4-6 6-6 12 0 5.52 2.69 10 6 10s6-4.48 6-10c0-6-4-8-6-12z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M16 24c0-2 1-3.5 2-5 1 1.5 2 3 2 5 0 2.21-.9 4-2 4s-2-1.79-2-4z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -36,9 +36,9 @@ const pillars = [
     image: "/images/秘伝のたれ.png",
     icon: (
       <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
-        <path d="M12 32V16l8-8 8 8v16H12z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <path d="M16 32v-8h8v8" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <path d="M20 8V6M14 14l-2-2M26 14l2-2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <path d="M12 32V16l8-8 8 8v16H12z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M16 32v-8h8v8" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M20 8V6M14 14l-2-2M26 14l2-2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -69,12 +69,12 @@ export default function Kodawari() {
               className="group relative"
               style={{ animationDelay: `${i * 100}ms` }}
             >
-              <div className="relative border border-white/5 bg-engyu-card/50 p-8 hover:border-engyu-gold/30 transition-all duration-500">
-                <span className="absolute top-4 right-6 text-7xl font-bold text-engyu-gold/5 leading-none select-none">
+              <div className="relative border border-white/10 bg-engyu-card p-8 hover:border-engyu-gold/50 transition-all duration-500 bg-gradient-to-b from-white/[0.04] to-transparent">
+                <span className="absolute top-4 right-6 text-7xl font-bold text-engyu-gold/[0.12] leading-none select-none">
                   {pillar.number}
                 </span>
 
-                <div className="text-engyu-gold mb-6 group-hover:scale-110 transition-transform duration-500 origin-left">
+                <div className="mb-6 group-hover:scale-110 transition-transform duration-500 origin-left" style={{ color: '#D4AF37' }}>
                   {pillar.icon}
                 </div>
 
@@ -91,7 +91,7 @@ export default function Kodawari() {
 
                 <div className="h-[1px] w-10 bg-engyu-gold/40 mb-5 group-hover:w-20 transition-all duration-500" />
 
-                <p className="text-engyu-muted text-sm leading-loose">
+                <p className="text-engyu-muted text-sm leading-loose font-sans-jp">
                   {pillar.body}
                 </p>
 

@@ -12,12 +12,12 @@ export default function Footer() {
               炎牛
             </p>
             <p className="text-engyu-muted text-xs tracking-[0.5em]">ENGYU YAKINIKU</p>
-            <p className="text-engyu-muted text-xs mt-4 leading-loose">
+            <p className="text-engyu-muted text-xs mt-4 leading-loose font-sans-jp">
               〒544-0034
               <br />
-              大阪府大阪市生野区鶴橋2丁目5−8
+              大阪府大阪市生野区鶴橋2丁目
               <br />
-              TEL: 06-0000-0000
+              <span className="text-engyu-gold">TEL: 06-0000-0000</span>
             </p>
           </div>
 
@@ -34,7 +34,7 @@ export default function Footer() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-engyu-muted text-sm tracking-wider hover:text-engyu-gold transition-colors"
+                className="text-engyu-muted text-sm tracking-wider hover:text-engyu-gold transition-colors font-sans-jp"
               >
                 {link.label}
               </a>
@@ -46,22 +46,22 @@ export default function Footer() {
             <p className="text-engyu-gold text-xs tracking-[0.4em] mb-2">
               HOURS
             </p>
-            <p className="text-engyu-muted text-xs leading-loose">
+            <p className="text-engyu-muted text-xs leading-loose font-sans-jp">
               火〜金：17:00〜23:30
               <br />
               土・日・祝：16:00〜23:30
               <br />
-              <span className="text-engyu-red/70">月曜定休</span>
+              <span className="text-engyu-gold/80">月曜定休</span>
             </p>
           </div>
         </div>
 
         {/* Bottom bar */}
         <div className="mt-10 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-engyu-muted text-xs tracking-wider">
+          <p className="text-engyu-muted text-xs tracking-wider font-sans-jp">
             © 2024 炎牛（ENGYU）All rights reserved.
           </p>
-          <p className="text-engyu-muted/40 text-xs">
+          <p className="text-engyu-muted/40 text-xs font-sans-jp">
             大阪・鶴橋の焼肉 炎牛
           </p>
         </div>

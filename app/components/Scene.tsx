@@ -44,7 +44,7 @@ export default function Scene() {
             <div className="h-[1px] w-12 bg-engyu-gold/60" />
           </div>
 
-          <p className="text-engyu-cream/85 text-sm leading-loose mb-10 tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+          <p className="text-engyu-cream/85 text-sm leading-loose mb-10 tracking-wide drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)] font-sans-jp">
             家族のお祝い、ご友人との集まり、記念日のお食事に最適です。
             <br />
             特別なひとときを、炎牛でお過ごしください。
@@ -55,7 +55,7 @@ export default function Scene() {
             {scenes.map((s) => (
               <li
                 key={s.label}
-                className="border border-engyu-gold/60 text-engyu-gold text-xs tracking-widest px-4 py-2 backdrop-blur-sm bg-black/20"
+                className="border border-engyu-gold/60 text-engyu-gold text-xs tracking-widest px-4 py-2 backdrop-blur-sm bg-black/20 font-sans-jp"
               >
                 {s.label}
               </li>
@@ -65,7 +65,7 @@ export default function Scene() {
           {/* CTA */}
           <a
             href="#access"
-            className="group inline-flex items-center gap-3 border border-engyu-gold text-engyu-gold px-8 py-4 text-sm tracking-[0.3em] relative overflow-hidden hover:text-engyu-black transition-colors duration-500"
+            className="group inline-flex items-center gap-3 border border-engyu-gold text-engyu-gold px-8 py-4 text-sm tracking-[0.3em] relative overflow-hidden hover:text-engyu-black transition-colors duration-500 font-sans-jp"
           >
             <span className="absolute inset-0 bg-engyu-gold translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
             <span className="relative">ご予約・お問い合わせ</span>
