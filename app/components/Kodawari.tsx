@@ -46,21 +46,23 @@ export default function Kodawari() {
               className="group relative"
               style={{ animationDelay: `${i * 100}ms` }}
             >
-              <div className="relative border border-white/10 bg-engyu-card p-8 hover:border-engyu-gold/50 transition-all duration-500 bg-gradient-to-b from-white/[0.04] to-transparent flex flex-col">
-                <h3 className="text-xl font-bold text-engyu-cream tracking-wider mb-1">
-                  {pillar.title}
-                </h3>
-                <p className="text-engyu-gold text-xs tracking-[0.3em] mb-5">
-                  {pillar.subtitle}
-                </p>
+              <div className="relative border border-white/10 bg-engyu-card p-8 hover:border-engyu-gold/50 transition-all duration-500 bg-gradient-to-b from-white/[0.04] to-transparent flex flex-col h-full">
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold text-engyu-cream tracking-wider mb-1">
+                    {pillar.title}
+                  </h3>
+                  <p className="text-engyu-gold text-xs tracking-[0.3em] mb-5">
+                    {pillar.subtitle}
+                  </p>
 
-                <div className="h-[1px] w-10 bg-engyu-gold/40 mb-5 group-hover:w-20 transition-all duration-500" />
+                  <div className="h-[1px] w-10 bg-engyu-gold/40 mb-5 group-hover:w-20 transition-all duration-500" />
 
-                <p className="text-engyu-muted text-sm leading-loose font-sans-jp">
-                  {pillar.body}
-                </p>
+                  <p className="text-engyu-muted text-sm leading-loose font-sans-jp">
+                    {pillar.body}
+                  </p>
+                </div>
 
-                <div className="mt-auto relative h-48 overflow-hidden">
+                <div className="mt-0 relative h-48 overflow-hidden">
                   <Image
                     src={pillar.image}
                     alt={pillar.title}
