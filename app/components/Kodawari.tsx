@@ -2,45 +2,22 @@ import Image from "next/image";
 
 const pillars = [
   {
-    number: "01",
     title: "産地直送の黒毛和牛",
     subtitle: "素材への誇り",
     body: "全国から厳選した黒毛和牛を産地直送で仕入れ。A4・A5ランクのみを扱い、その日の状態を見極めた上で最適な部位をご提供します。鮮度と品質に一切の妥協はありません。",
     image: "/images/産地直送の黒毛和牛.png",
-    icon: (
-      <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
-        <path d="M20 4C11.16 4 4 11.16 4 20s7.16 16 16 16 16-7.16 16-16S28.84 4 20 4z" stroke="currentColor" strokeWidth="2" />
-        <path d="M14 20c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6z" stroke="currentColor" strokeWidth="2" />
-        <path d="M20 14V8M20 32v-6M14 20H8M32 20h-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    ),
   },
   {
-    number: "02",
     title: "備長炭の火入れ",
     subtitle: "炎のこだわり",
     body: "紀州産の備長炭を使い、遠赤外線で肉の芯まで均一に火を通します。余分な脂を落としながら旨味を閉じ込める、この炎こそが「炎牛」の原点。炭の香りが肉の美味しさをさらに引き立てます。",
     image: "/images/備長炭焼肉画像.jpg",
-    icon: (
-      <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
-        <path d="M20 6c-2 4-6 6-6 12 0 5.52 2.69 10 6 10s6-4.48 6-10c0-6-4-8-6-12z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
-        <path d="M16 24c0-2 1-3.5 2-5 1 1.5 2 3 2 5 0 2.21-.9 4-2 4s-2-1.79-2-4z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
-      </svg>
-    ),
   },
   {
-    number: "03",
     title: "秘伝のたれ",
     subtitle: "受け継がれる味",
     body: "三代にわたって守り続けてきた秘伝のタレ。醤油・味醂・果汁をベースに、長年継ぎ足しながら育てた独自の配合は企業秘密。どんな部位にも合う万能タレと、塩・レモンの2種類でお楽しみいただけます。",
     image: "/images/秘伝のたれ.png",
-    icon: (
-      <svg viewBox="0 0 40 40" fill="none" className="w-10 h-10">
-        <path d="M12 32V16l8-8 8 8v16H12z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
-        <path d="M16 32v-8h8v8" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
-        <path d="M20 8V6M14 14l-2-2M26 14l2-2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    ),
   },
 ];
 
@@ -65,23 +42,11 @@ export default function Kodawari() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
           {pillars.map((pillar, i) => (
             <div
-              key={pillar.number}
+              key={pillar.title}
               className="group relative"
               style={{ animationDelay: `${i * 100}ms` }}
             >
               <div className="relative border border-white/10 bg-engyu-card p-8 hover:border-engyu-gold/50 transition-all duration-500 bg-gradient-to-b from-white/[0.04] to-transparent flex flex-col">
-                <span className="absolute top-4 right-6 text-7xl font-bold text-engyu-gold/[0.12] leading-none select-none">
-                  {pillar.number}
-                </span>
-
-                <div className="mb-6 group-hover:scale-110 transition-transform duration-500 origin-left" style={{ color: '#D4AF37' }}>
-                  {pillar.icon}
-                </div>
-
-                <span className="text-engyu-gold/60 text-xs tracking-widest mb-2 block">
-                  {pillar.number}
-                </span>
-
                 <h3 className="text-xl font-bold text-engyu-cream tracking-wider mb-1">
                   {pillar.title}
                 </h3>
