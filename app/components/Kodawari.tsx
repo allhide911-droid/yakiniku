@@ -69,7 +69,7 @@ export default function Kodawari() {
               className="group relative"
               style={{ animationDelay: `${i * 100}ms` }}
             >
-              <div className="relative border border-white/10 bg-engyu-card p-8 hover:border-engyu-gold/50 transition-all duration-500 bg-gradient-to-b from-white/[0.04] to-transparent">
+              <div className="relative border border-white/10 bg-engyu-card p-8 hover:border-engyu-gold/50 transition-all duration-500 bg-gradient-to-b from-white/[0.04] to-transparent flex flex-col">
                 <span className="absolute top-4 right-6 text-7xl font-bold text-engyu-gold/[0.12] leading-none select-none">
                   {pillar.number}
                 </span>
@@ -95,7 +95,7 @@ export default function Kodawari() {
                   {pillar.body}
                 </p>
 
-                <div className="mt-6 relative h-48 overflow-hidden">
+                <div className="mt-auto relative h-48 overflow-hidden">
                   <Image
                     src={pillar.image}
                     alt={pillar.title}
